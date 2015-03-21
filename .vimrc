@@ -96,11 +96,13 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
     command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-                \ | wincmd p | diffthis
+                \ | wincmd l | diffthis
 endif
 "Set mapleader
 let mapleader = ","
 
+" diff current buf with originial file
+nmap <leader>do :DiffOrig<cr>
 "Fast reloading of the .vimrc
 map <silent> <leader>sv :source ~/.vimrc<cr>
 "Fast editing of .vimrc
@@ -130,7 +132,6 @@ map <silent> <leader>lsv :call LoadSession()<cr>
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
-map <silent> <leader>tl :TlistToggle<cr>
 
 """""""""""""""Netrw
 let g:netrw_winsize = 30
@@ -143,6 +144,8 @@ let g:defaultExplorer = 0
 map <silent> <leader>lu :FirstExplorerWindow<cr>
 map <silent> <leader>lb :BottomExplorerWindow<cr>
 map <silent> <leader>wm :WMToggle<cr> 
+
+""""""""""""""File saving shortcuts
 map <silent> <leader>wa :wa<cr> 
 map <silent> <leader>ww :w<cr> 
 
@@ -151,9 +154,6 @@ colorscheme lucius
 LuciusBlackLowContrast
 "colorscheme murphy
 "colorscheme vividchalk
-
-""""""""""""""buffer operations
-map <silent> <leader>bf :buffer<cr>
 
 """"""""""""""spell check operations
 map <silent> <leader>sc :setlocal spell! spelllang=en_us<CR>
@@ -171,10 +171,9 @@ vnoremap < <gv "remove indent
 map <silent> <leader>qa :qa<cr>
 
 """"""""""""""window operations
-map <silent> <c-j> :wincmd j<CR>
-map <silent> <c-k> :wincmd k<CR>
-map <silent> <c-l> :wincmd l<CR>
-map <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <c-h> :wincmd h<CR>
 map <F6> <c-w>w
 
 """"""""""""""stop highlighting after search
@@ -201,6 +200,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
 """"""""""""""Built-in explorer
 noremap <leader>ex :Explore<CR>
+
 """"""""""""""Autoformatting
 noremap <leader>fm :Autoformat<CR><CR>
 
