@@ -17,6 +17,13 @@ if v:progname =~? "evim"
     finish
 endif
 
+" set the mouse
+if has("gui_running")
+    set mouse=a
+else
+    set mouse=
+endif
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -51,8 +58,8 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
     set guifont=Monospace\ 11
     set lines=999 columns=999
-    set mouse=a
 endif
+
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
