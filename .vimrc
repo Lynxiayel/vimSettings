@@ -177,9 +177,9 @@ map <silent> <leader>qa :qa<cr>
 """"""""""""""stop highlighting after search
 map <silent> <leader>nh :nohl<cr>
 
-""""""""""""""Enable Pathogen
-execute pathogen#infect()
-call pathogen#helptags()
+" """"""""""""""Enable Pathogen
+" execute pathogen#infect()
+" call pathogen#helptags()
 
 """"""""""""""Settings for latex-suite
 set grepprg=grep\ -nH\ $*
@@ -235,6 +235,4 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set t_Co=256
-filetype indent on
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
