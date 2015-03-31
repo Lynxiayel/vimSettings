@@ -173,12 +173,6 @@ vnoremap < <gv "remove indent
 """"""""""""""quit operations
 map <silent> <leader>qa :qa<cr>
 
-""""""""""""""window operations
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-l> :wincmd l<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-k> :wincmd k<CR>
-map <F6> <c-w>w
 
 """"""""""""""stop highlighting after search
 map <silent> <leader>nh :nohl<cr>
@@ -212,11 +206,23 @@ noremap <leader>fm :Autoformat<CR><CR>
 let g:pymode_lint_unmodified = 1
 let g:pymode_lint_sort = ['E', 'W', 'C']
 let g:pymode_options_max_line_length = 79
+let g:pymode_rope_show_doc_bind = '<leader>dc'
 
 
 """"""""""""""Fcitx
 set ttimeoutlen=100
 
+""""""""""""""Insert newline without leaving normal mode
+nmap <CR> o<ESC>
+nmap <S-CR> O<ESC>
+
+""""""""""""""window operations
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-k> :wincmd k<CR>
+map <F6> <c-w>w
+"
 """"""""""""""Misc settings
 set background=dark
 let &termencoding=&encoding
