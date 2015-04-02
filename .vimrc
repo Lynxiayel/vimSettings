@@ -166,10 +166,6 @@ map <silent> <leader>tn :tabnew<cr>
 map <silent> <leader>m :tabprevious<cr>
 map <silent> <leader>n :tabnext<cr>
 
-""""""""""""""visual operations for blocks
-vnoremap > >gv "add indent
-vnoremap < <gv "remove indent
-
 """"""""""""""quit operations
 map <silent> <leader>qa :qa<cr>
 
