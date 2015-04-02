@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/find
+~MSle0~/pdf
 
 # Last Substitute Search Pattern:
 ~MSle0&^\\includegraphics
@@ -17,15 +17,49 @@
 $
 
 # Command Line History (newest to oldest):
+:e parts/evaluation.tex
+:e grammarTest.py
+:e Util.py
+:e TraceReader.py
+:e TracePlotter.py
+:e
+:e plotEscalator.py
+:e plotElevator.py
+:e plotCorrelation.py
+:e plotFiltered.py
+:e testMagnitudeCorrelation.py
+:vsp testMagnitudeCorrelation.py
+:vsp  testMagnitudeCorrelation.py
+:594
+:vsp grammarTest.py
+:e ~/.vim/ftplugin/latex-suite/texrc
+:make
+:e paper.tex
+:e parts/related.tex
+:vsp paper.tex
+:help latex-suite.txt
+:/down
+:q
+:Q
+:1
+:flat
+:help pymode
+:vsp testAccCrossDimCorrelation.py
+:qa
+:PluginUpdate
+:qq
+:e log
+:.,.+1q
+:e ../traceMpl/grammarTest.py
+:vsp ../traceMpl/TraceReader.py
+:clear
 :PluginInstall
 :vsp ~/Dropbox/fklikeArxiv/
 :vsp traceMpl/Util.py
 :e paper.arxiv.tex
-:e
 :e paper.aux
 :e introduction.tex
 :vsp find_new.tex
-:vsp paper.tex
 :1,$ s/^\\includegraphics/%\\includegraphics/g
 :1,$ s/^\\includegraphics/%\includegraphics/g
 :1,$ s/^\includegraphics/%\includegraphics/g
@@ -33,92 +67,58 @@ $
 :1,$ s/^\\includegrahics/%\includegraphics/g
 :1,$ s/^\\includegprahics/%\includegraphics/g
 :1,$ s/^\includegprahics/%\includegraphics/g
-:1,$ s/miltondooroutleftpillar/3/g
-:s/miltondooroutleftpillar/3/g
-:e css/style.css
-:e css/style-desktop.css
-:e css/style-1000px.css
-:e css/skel-noscript.css
-:pwd
-:sp css/style.css
-:vsp more.html
-:21
-:1,$ s/65d601/000000/g
-:1,$ s/4ca101/000000/g
-:1,$ s/4ca101/65d601/g
-:1,$ s/4ca101/009ccc/g
-:1,$ s/0074D9/AAAAAA/g
-:1,$ s/7FDBFF/4ca101/g
-:1,$ s/green/7FDBFF/g
-:1,$ s/E8E8E8/0074D9/g
-:e no-sidebar.html
-:vsp left-sidebar.html
-:61,82 s/315/480/g
-:61,82 s/560/853/g
-:62,80 s/h3>/h2>/g
-:e Util.py
-:.ll
-:e TraceReader.py
-:vsp Util.py
-:e parts/map.tex
-:e parts/design.tex
-:sp parts/introduction.tex
-:vsp  parts/bib.bib
-:e parts/locomotion.tex
-:e parts/locomotion.log
-:e parts/bib.bib
 
 # Search String History (newest to oldest):
-? (\(\f\|\[\|]\|\s\)*paper.arxiv.tex
+? (\(\f\|\[\|]\|\s\)*parts
+?/pdf
 ? \s\+$
-? (\(\f\|\[\|]\|\s\)*paper.tex
-? (\(\f\|\[\|]\|\s\)*introduction.tex
-?/keywor
-?/find
-?/2.png
-?/2.eps
-?/bbbbbbbbb
-?/nat
-?/includegraphics
-?/include
-?/find_new
-?/abstra
-?/includegra
-? ^\\includegraphics
-?/includegraph
-? ^\includegraphics
-? ^\includegrahics
-? ^\\includegrahics
-? ^\\includegprahics
-? ^\includegprahics
-?/input
-?/999330
-?/ebay
-?/like
-?/like_eg
-?/path
-?/image
-?/parts
-? miltondooroutleftpillar
-?/featured
-?/header
-?/main
-?/ p 
-?/ p
-?/container
-?/contain
-?/#content
-?/hr
-?/content
-?/section
-?/24u
-?/Section
-?/uu
-?/feature
-?/home
-?/homepage
-?/no
-?/logo
+?/flat
+?/0.5
+?/peakId
+?/step
+?/Improve
+?/Timestamp
+?/Imp
+?/Impro
+?/Im
+?/len()
+?/peak
+?/stepC
+?/improve
+?/shap
+?/Walk
+?/tool
+?/tooltip
+?/slopeHe
+?/MotionType
+?/getStep
+?/Motion
+?/eps
+?/DPI
+?/png
+?/Png
+?/xelatex
+?/error
+?/compile
+?/ll
+?/up
+?/down
+? down
+?/downstairs
+?/mean
+?/Elevator
+?/ZZ
+?/static
+?/elevator
+?/walking
+?/downstair
+?/upstair
+?/upstairs
+?/walk
+?/getEn
+? \Vdef\%#
+?/Type
+?/Step
 
 # Expression History (newest to oldest):
 
@@ -131,114 +131,51 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	\pdfoutput=1
+"0	LINE	0
+	\label{sec:bg}
 "1	LINE	0
-	\pdfoutput=1
+	\label{sec:bg}
 "2	LINE	0
-	      \affaddr{Montreal, Canada}
-"3	LINE	0
-	" Press ? for keyboard shortcuts
-	" Sorted by name (.bak,~,.o,.h,.info,.swp,.obj at end of list)
-	+ lynxiayel/ (/home/lynxiayel/)
-	"= /home/lynxiayel/Dropbox/fklikeArxiv/
-	../
-	disclaimer/
-	figures/
-	parts/
-	WWW_fakeLike.pdf
-	acm_proc_article-sp.cls
-	fakeLikeACSAC.pdf
-	mine_sig-alternate.cls
-	paper
-	paper.aux
-	paper.bbl
-	paper.blg
-	paper.log
-	paper.pdf
-	paper.synctex.gz
-	paper.tex
-	paper.tex.latexmain
-	sig-alternate.cls
-	paper.tex~
-"4	LINE	0
 	
+"3	LINE	0
+	\label{sec:bg}
+"4	LINE	0
+	            self.get
 "5	LINE	0
-	" Press ? for keyboard shortcuts
-	" Sorted by name (.bak,~,.o,.h,.info,.swp,.obj at end of list)
-	+ lynxiayel/ (/home/lynxiayel/)
-	"= /home/lynxiayel/Dropbox/fklikeArxiv/
-	../
-	disclaimer/
-	figures/
-	parts/
-	WWW_fakeLike.pdf
-	acm_proc_article-sp.cls
-	fakeLikeACSAC.pdf
-	mine_sig-alternate.cls
-	paper
-	paper.aux
-	paper.bbl
-	paper.blg
-	paper.log
-	paper.pdf
-	paper.synctex.gz
-	paper.tex
-	paper.tex.latexmain
-	sig-alternate.cls
-	paper.tex~
+	        pass
 "6	LINE	0
 	
 "7	LINE	0
-	" Press ? for keyboard shortcuts
-	" Sorted by name (.bak,~,.o,.h,.info,.swp,.obj at end of list)
-	+ lynxiayel/ (/home/lynxiayel/)
-	"= /home/lynxiayel/Dropbox/fklikeArxiv/
-	../
-	disclaimer/
-	figures/
-	parts/
-	WWW_fakeLike.pdf
-	acm_proc_article-sp.cls
-	fakeLikeACSAC.pdf
-	mine_sig-alternate.cls
-	paper
-	paper.aux
-	paper.bbl
-	paper.blg
-	paper.log
-	paper.pdf
-	paper.synctex.gz
-	paper.tex
-	paper.tex.latexmain
-	sig-alternate.cls
-	paper.tex~
-"8	LINE	0
+	    print startIdx, endIdx
+"8	CHAR	0
+	    def getGlobalProjectDirection(self, R):
+	        """ given a rotation matrix R (stored as a long vector), first calculate the
+	            projection of (1,0,0), (0,1,0) and (0,0,1) from local to global.
+	            Then return the direction of these projection with global Y-axis, respectively (in radians).
+	        """
+	        curRotation = np.matrix([R[0:3], R[3:6], R[6:9]])
+	        p1 = np.squeeze(np.asarray(curRotation * np.matrix([1, 0, 0]).T))
+	        p2 = np.squeeze(np.asarray(curRotation * np.matrix([0, 1, 0]).T))
+	        p3 = np.squeeze(np.asarray(
+	            curRotation * np.matrix([0, 0, 1]).T))
+	        r1 = np.degrees(np.arctan2(p1[1], p1[0]))
+	        r2 = np.degrees(np.arctan2(p2[1], p2[0]))
+	        r3 = np.degrees(np.arctan2(p3[1], p3[0]))
+	        return r1, r2, r3
 	
+	if __name__ == '__main__':
+	    a = TraceReader('../../traces/walk_up_2014-12-05_16-13-44.txt')
+	    b = TraceReader('../../traces/stationary_2014-12-02_19-16-25.txt')
+	    c = TraceReader('../../traces/Elevator_(Up)_2014-10-27_22-42-22.txt')
+	    accData = a.getSensorData(a.getSensorNameFromKeyword('acceleration'))
+	    vecData = a.getSensorData(a.getSensorNameFromKeyword('vector'))
+	    transformedData = a.transformCoordinates(accData, vecData)
+	    print a.getStepCountBuiltin()
+	    print b.getStepCountBuiltin()
+	    print c.getStepCountBuiltin()
 "9	LINE	0
-	" Press ? for keyboard shortcuts
-	" Sorted by name (.bak,~,.o,.h,.info,.swp,.obj at end of list)
-	+ lynxiayel/ (/home/lynxiayel/)
-	"= /home/lynxiayel/Dropbox/fklikeArxiv/
-	../
-	disclaimer/
-	figures/
-	parts/
-	WWW_fakeLike.pdf
-	acm_proc_article-sp.cls
-	fakeLikeACSAC.pdf
-	mine_sig-alternate.cls
-	paper
-	paper.aux
-	paper.bbl
-	paper.blg
-	paper.log
-	paper.pdf
-	paper.synctex.gz
-	paper.tex
-	paper.tex.latexmain
-	sig-alternate.cls
-	paper.tex~
+	filetype indent on
+	filetype plugin on
 "a	CHAR	0
 	,wa€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýb€ýc€ýbkyyplllllllllllllllllcwtwitter_porn,wa€ýc€ýb€ýc€ýbgcc,wa€ýc€ýb€ýc€ýb€ýc€ýb,wa
 "i	CHAR	0
@@ -258,121 +195,1361 @@ $
 "z	CHAR	0
 	1343
 <Z€ý,€ý.ZZ€ý,€ý.kkkkkkkkkkkkkkkkkkkj,wajjjjjjjjjjjjjjjjjjjjjjjjj:hep p€kb€kb€kblp pyu€kbmpod€kb€kb€kbodejjjjjjjjjjjjjjjjjjjjjjjjwwjjjjkkkkkkkkkkkkkkk/CCkkkkkkkkkkkkkjjjjjjjjjjjjjjk€ýL€ýL€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýL€ýK€ýK€ýK€ýK€ýL€ýL€ýL€ý,€ý.yy,evjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/pyt€kbnnnnnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjkkkkkkkkkkjjjjjjjjjjpkokkkjyyjjpllllllllllllllcwPymodejI€kbllllllllllllllllllllllllllllllllr1,wa,,s,wa,svZZ,wa,wajjjjjjjj€ý,€ý.ZZ€ý,€ý.,wajjj,wakkkkkkkkkkkkkkkkkkk€ý,€ý.ZZ€ý,€ý.kkkkkkkkkkkkkkkkkk,wkkk,wa,wajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk,e,ev/py€kbyjjkjjjjkkkkk:help pymodej,nhjjjjjjjjjjjjjjjjjjjjjjkjwwjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkjjjkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkjjjjyy,evjkpi€kblllllllllllllllllllllllll,wa:help m€kbpymodejjjjjjjjjjjjjjj/sortjjjjkjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkjkkkkkkkkkkkkkkkkkkkkkkkk:€kb
-"-	CHAR	0
-	2
+""-	CHAR	0
+	pdf
 
 # File marks:
-'0  66  0  ~/Dropbox/fklikeArxiv/paper.tex
-'1  77  10  ~/Downloads/fklikeArxiv/tem/paper.tex
-'2  1  0  ~/Downloads/fklikeArxiv/tem/paper.
-'3  71  8  ~/Downloads/fklikeArxiv/tem/paper.tex
-'4  72  7  ~/Downloads/fklikeArxiv/tem/paper.tex
-'5  88  1  ~/Downloads/fklikeArxiv/tem/paper.tex
-'6  80  1  ~/Downloads/fklikeArxiv/tem/paper.tex
-'7  198  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
-'8  18  62  ~/Downloads/fklikeArxiv/tem/introduction.tex
-'9  9  63  ~/Downloads/fklikeArxiv/tem/introduction.tex
+'0  58  0  ~/.bashrc
+'1  56  19  ~/.bashrc
+'2  21  0  ~/Dropbox/LocME/parts/evaluation.tex
+'3  36  7  ~/Dropbox/LocME/paper.tex
+'4  35  0  ~/Dropbox/LocME/parts/introduction.tex
+'5  1  0  ~/mygit/SensorRecorder/.git/MERGE_MSG
+'6  298  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+'7  105  6  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+'8  110  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+'9  56  50  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
 
 # Jumplist (newest first):
--'  66  0  ~/Dropbox/fklikeArxiv/paper.tex
--'  49  4  ~/Dropbox/fklikeArxiv/paper.tex
--'  72  12  ~/Dropbox/fklikeArxiv/paper.tex
--'  1  10  ~/Dropbox/fklikeArxiv/paper.tex
--'  65  0  ~/Dropbox/fklikeArxiv/paper.tex
--'  1  0  ~/Dropbox/fklikeArxiv
--'  1  0  ~/Dropbox/fklikeArxiv/paper
--'  15  0  ~/Documents/paper.arxiv.tex
--'  1  0  ~/Documents/paper.arxiv.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/test/paper.arxiv.tex
--'  14  31  ~/Downloads/fklikeArxiv/tem/paper.arxiv.tex
--'  77  10  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  67  0  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  37  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  45  13  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  42  12  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  6  464  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  84  15  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  71  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/paper.
--'  72  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  81  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  88  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  201  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  33  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  38  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  76  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  130  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  155  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  159  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  163  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  193  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  197  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  82  2  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  80  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  73  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  91  0  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  198  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  248  0  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  18  62  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  15  254  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  9  63  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  10  0  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  4  52  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  24  1  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  63  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  1  1  ~/Downloads/fklikeArxiv/tem/related.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/conclusion.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  138  1  ~/Downloads/fklikeArxiv/tem/generate_new.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/generate_new.tex
--'  1  1  ~/Downloads/fklikeArxiv/tem/abstract.tex
--'  45  1  ~/Downloads/fklikeArxiv/paper.tex
--'  92  16  ~/Downloads/fklikeArxiv/paper.tex
--'  93  7  ~/Downloads/fklikeArxiv/paper.tex
--'  1  0  ~/Downloads/fklikeArxiv/paper.tex
--'  28  1  ~/Downloads/fklikeArxiv/paper.tex
--'  88  7  ~/Downloads/fklikeArxiv/paper.tex
--'  86  7  ~/Downloads/fklikeArxiv/paper.tex
--'  84  7  ~/Downloads/fklikeArxiv/paper.tex
--'  82  7  ~/Downloads/fklikeArxiv/paper.tex
--'  80  7  ~/Downloads/fklikeArxiv/paper.tex
--'  73  7  ~/Downloads/fklikeArxiv/paper.tex
--'  942  3  ~/Dropbox/fakeLikeDemo/demosite/css/style.css
--'  66  0  ~/Dropbox/fklikeArxiv/paper.tex
--'  49  4  ~/Dropbox/fklikeArxiv/paper.tex
--'  72  12  ~/Dropbox/fklikeArxiv/paper.tex
--'  1  10  ~/Dropbox/fklikeArxiv/paper.tex
--'  65  0  ~/Dropbox/fklikeArxiv/paper.tex
--'  1  0  ~/Dropbox/fklikeArxiv
--'  1  0  ~/Dropbox/fklikeArxiv/paper
--'  15  0  ~/Documents/paper.arxiv.tex
--'  1  0  ~/Documents/paper.arxiv.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/test/paper.arxiv.tex
--'  14  31  ~/Downloads/fklikeArxiv/tem/paper.arxiv.tex
--'  77  10  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  67  0  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  37  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  45  13  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  42  12  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  6  464  ~/Downloads/fklikeArxiv/tem/introduction.tex
--'  84  15  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  71  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  1  0  ~/Downloads/fklikeArxiv/tem/paper.
--'  72  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  81  7  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  88  1  ~/Downloads/fklikeArxiv/tem/paper.tex
--'  201  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  33  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  38  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  76  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  130  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  155  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  159  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
--'  163  2  ~/Downloads/fklikeArxiv/tem/find_new.tex
+-'  58  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  57  21  ~/.bashrc
+-'  56  19  ~/.bashrc
+-'  21  0  ~/Dropbox/LocME/parts/evaluation.tex
+-'  12  68  ~/Dropbox/LocME/parts/evaluation.tex
+-'  35  0  ~/Dropbox/LocME/parts/introduction.tex
+-'  7  65  ~/Dropbox/LocME/parts/evaluation.tex
+-'  17  67  ~/Dropbox/LocME/parts/evaluation.tex
+-'  36  7  ~/Dropbox/LocME/paper.tex
+-'  128  0  ~/.vim/ftplugin/latex-suite/texrc
+-'  270  0  ~/.vim/ftplugin/latex-suite/texrc
+-'  75  1  ~/Dropbox/LocME/paper.tex
+-'  32  26  ~/Dropbox/LocME/parts/introduction.tex
+-'  4  0  ~/Dropbox/LocME/parts/introduction.tex
+-'  30  0  ~/Dropbox/LocME/parts/introduction.tex
+-'  23  0  ~/Dropbox/LocME/parts/introduction.tex
+-'  17  1  ~/Dropbox/LocME/paper.tex
+-'  1  0  ~/mygit/SensorRecorder/.git/MERGE_MSG
+-'  298  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  271  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  244  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  139  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  111  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  105  6  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  110  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  56  50  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  58  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  66  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  60  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  6  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  158  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  152  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  147  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  142  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  137  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  131  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  127  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  126  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  121  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  116  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  106  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  101  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  96  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  91  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  86  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  82  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  80  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  75  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  70  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  64  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  59  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  54  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  49  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  44  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  39  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  34  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  29  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  23  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  17  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  11  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  10  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  156  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  154  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  136  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  134  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  132  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  113  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  28  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  27  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  296  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  267  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  265  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  237  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  233  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  135  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  1  126  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  47  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  4061  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  4015  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3969  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3877  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3831  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3788  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3742  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3699  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3653  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3607  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3561  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3515  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3469  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3423  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3377  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3288  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3242  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  3196  0  ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+-'  21  0  ~/Dropbox/LocME/parts/evaluation.tex
+-'  12  68  ~/Dropbox/LocME/parts/evaluation.tex
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	"	58	0
+	^	57	21
+	.	57	20
+	+	33	19
+	+	38	8
+	+	48	17
+	+	50	0
+	+	56	18
+	+	57	20
+
+> ~/Dropbox/LocME/paper.tex
+	"	36	7
+	.	64	0
+	+	61	0
+	+	31	22
+	+	17	0
+	+	64	0
+
+> ~/Dropbox/LocME/parts/introduction.tex
+	"	35	0
+	^	35	309
+	.	35	308
+	+	5	0
+	+	1	0
+	+	2	0
+	+	6	0
+	+	4	16
+	+	3	0
+	+	35	308
+
+> ~/Dropbox/LocME/paper.log
+	"	464	0
+
+> ~/Dropbox/LocME/parts/evaluation.tex
+	"	21	0
+	^	12	68
+	.	12	67
+	+	31	67
+	+	20	5
+	+	20	19
+	+	20	0
+	+	25	0
+	+	20	0
+	+	20	60
+	+	25	60
+	+	11	13
+	+	30	11
+	+	12	13
+	+	13	0
+	+	15	0
+	+	17	0
+	+	20	0
+	+	15	0
+	+	13	34
+	+	15	0
+	+	18	0
+	+	23	0
+	+	22	0
+	+	27	0
+	+	15	28
+	+	20	28
+	+	25	28
+	+	17	0
+	+	14	17
+	+	19	0
+	+	24	0
+	+	25	5
+	+	15	31
+	+	20	31
+	+	25	31
+	+	28	33
+	+	20	32
+	+	25	32
+	+	13	24
+	+	18	24
+	+	23	24
+	+	25	32
+	+	26	27
+	+	21	19
+	+	17	0
+	+	16	22
+	+	2	0
+	+	7	66
+	+	12	68
+	+	17	68
+	+	26	0
+	+	17	67
+	+	7	65
+	+	12	67
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/TraceReader.py
+	"	742	0
+	^	666	20
+	.	668	0
+	+	660	0
+	+	661	0
+	+	657	0
+	+	658	0
+	+	644	52
+	+	651	0
+	+	798	53
+	+	661	0
+	+	658	0
+	+	687	0
+	+	658	0
+	+	661	0
+	+	687	0
+	+	677	0
+	+	677	0
+	+	681	0
+	+	682	0
+	+	683	0
+	+	682	19
+	+	674	0
+	+	617	38
+	+	625	28
+	+	627	28
+	+	626	27
+	+	627	15
+	+	629	31
+	+	620	10
+	+	621	20
+	+	625	22
+	+	626	24
+	+	677	40
+	+	661	0
+	+	658	0
+	+	687	0
+	+	660	0
+	+	657	0
+	+	650	13
+	+	644	0
+	+	650	55
+	+	645	27
+	+	645	31
+	+	645	43
+	+	645	14
+	+	645	50
+	+	645	17
+	+	645	35
+	+	750	82
+	+	761	14
+	+	800	58
+	+	1	0
+	+	804	35
+	+	805	43
+	+	761	10
+	+	805	39
+	+	800	34
+	+	807	34
+	+	808	20
+	+	809	27
+	+	818	55
+	+	813	30
+	+	819	27
+	+	1	0
+	+	644	29
+	+	645	17
+	+	646	0
+	+	645	20
+	+	646	80
+	+	1	0
+	+	650	36
+	+	652	51
+	+	818	26
+	+	817	27
+	+	658	12
+	+	677	40
+	+	676	44
+	+	677	0
+	+	678	0
+	+	677	61
+	+	675	31
+	+	676	19
+	+	675	30
+	+	677	19
+	+	678	23
+	+	689	26
+	+	680	39
+	+	630	0
+	+	623	0
+	+	621	27
+	+	623	107
+	+	621	0
+	+	623	168
+	+	623	8
+	+	687	0
+	+	664	0
+	+	672	0
+	+	664	16
+	+	665	16
+	+	666	20
+	+	667	0
+	+	668	0
+	a	669	23
+	o	668	25
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/[Buf List]
+	"	1	0
+	.	13	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	13	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__Tag_List__
+	"	3	0
+	.	24	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	169	0
+	+	168	0
+	+	104	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	39	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	24	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__doc____rope__
+	"	4	0
+	.	1	0
+	+	130	0
+	+	127	0
+	+	123	0
+	+	120	0
+	+	116	0
+	+	112	0
+	+	108	0
+	+	105	0
+	+	101	0
+	+	97	0
+	+	93	0
+	+	89	0
+	+	85	0
+	+	81	0
+	+	78	0
+	+	74	0
+	+	69	0
+	+	64	0
+	+	60	0
+	+	56	0
+	+	52	0
+	+	48	0
+	+	44	0
+	+	15	0
+	+	12	0
+	+	9	0
+	+	4	0
+	+	1	0
+
+> /usr/lib/python2.7/site-packages/scipy-0.14.0-py2.7-linux-x86_64.egg/scipy/signal/_peak_finding.py
+	"	176	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/grammarTest.py
+	"	89	5
+	^	129	34
+	.	130	4
+	+	112	0
+	+	113	0
+	+	114	6
+	+	115	67
+	+	115	2
+	+	5	17
+	+	115	11
+	+	1	0
+	+	1	0
+	+	115	0
+	+	115	0
+	+	1	5
+	+	115	6
+	+	1	55
+	+	115	0
+	+	119	44
+	+	120	32
+	+	1	54
+	+	1	17
+	+	1	0
+	+	120	71
+	+	130	40
+	+	1	0
+	+	130	5
+	+	121	29
+	+	122	45
+	+	1	0
+	+	130	0
+	+	123	42
+	+	124	43
+	+	115	0
+	+	119	0
+	+	115	21
+	+	115	0
+	+	115	0
+	+	118	0
+	+	120	0
+	+	119	0
+	+	124	47
+	+	130	0
+	+	131	0
+	+	126	20
+	+	125	27
+	+	126	19
+	+	127	35
+	+	128	26
+	+	131	4
+	+	129	24
+	+	131	0
+	+	129	33
+	+	130	4
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/testMagnitudeCorrelation.py
+	"	33	27
+	^	24	60
+	.	1	0
+	+	30	26
+	+	31	90
+	+	24	21
+	+	32	0
+	+	33	85
+	+	33	89
+	+	24	59
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/TracePlotter.py
+	"	104	0
+	^	83	42
+	.	1	0
+	+	191	0
+	+	181	18
+	+	152	19
+	+	187	0
+	+	188	0
+	+	188	0
+	+	187	0
+	+	188	0
+	+	187	29
+	+	188	50
+	+	189	131
+	+	190	30
+	+	1	0
+	+	1	0
+	+	139	0
+	+	141	7
+	+	152	0
+	+	142	15
+	+	143	0
+	+	109	0
+	+	149	0
+	+	175	0
+	+	175	0
+	+	178	0
+	+	183	0
+	+	177	58
+	+	202	41
+	+	203	35
+	+	177	80
+	+	175	30
+	+	177	64
+	+	184	18
+	+	1	0
+	+	139	30
+	+	141	60
+	+	150	0
+	+	151	0
+	+	150	18
+	+	1	0
+	+	94	30
+	+	96	61
+	+	110	18
+	+	1	0
+	+	148	20
+	+	182	20
+	+	1	0
+	+	175	0
+	+	184	34
+	+	177	81
+	+	139	13
+	+	150	34
+	+	139	0
+	+	141	77
+	+	110	34
+	+	94	0
+	+	96	81
+	+	141	62
+	+	1	0
+	+	104	46
+	+	1	0
+	+	193	30
+	+	154	25
+	+	182	0
+	+	183	0
+	+	182	59
+	+	1	0
+	+	184	35
+	+	155	23
+	+	190	34
+	+	18	10
+	+	182	43
+	+	155	23
+	+	154	25
+	+	184	35
+	+	104	44
+	+	193	30
+	+	128	38
+	+	126	22
+	+	124	14
+	+	1	0
+	+	126	21
+	+	128	39
+	+	127	0
+	+	128	41
+	+	1	0
+	+	81	22
+	+	79	14
+	+	81	22
+	+	83	41
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotFiltered.py
+	"	24	1
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotCorrelation.py
+	"	74	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotElevator.py
+	"	22	10
+	^	21	27
+	.	1	0
+	+	19	26
+	+	21	27
+	+	23	0
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotEscalator.py
+	"	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/Util.py
+	"	43	1
+	^	14	66
+	.	1	0
+	+	118	0
+	+	118	0
+	+	118	22
+	+	118	66
+	+	118	0
+	+	118	6
+	+	118	14
+	+	118	29
+	+	118	17
+	+	118	14
+	+	118	0
+	+	118	44
+	+	118	38
+	+	118	30
+	+	118	13
+	+	118	7
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	27
+	+	118	31
+	+	118	38
+	+	118	0
+	+	118	23
+	+	118	50
+	+	118	29
+	+	118	33
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	29
+	+	118	8
+	+	118	0
+	+	118	14
+	+	118	0
+	+	118	0
+	+	118	19
+	+	118	0
+	+	118	55
+	+	118	28
+	+	118	0
+	+	118	22
+	+	118	0
+	+	118	24
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	11
+	+	118	0
+	+	118	22
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	21
+	+	118	0
+	+	118	0
+	+	118	0
+	+	118	0
+	+	86	0
+	+	87	0
+	+	1	0
+	+	87	0
+	+	1	0
+	+	113	64
+	+	114	25
+	+	1	0
+	+	115	58
+	+	115	0
+	+	15	43
+	+	14	100
+	+	1	0
+	+	26	28
+	+	27	15
+	+	30	19
+	+	25	18
+	+	28	27
+	+	30	12
+	+	29	12
+	+	30	15
+	+	1	0
+	+	17	20
+	+	15	41
+	+	15	0
+	+	15	8
+	+	15	47
+	+	16	43
+	+	15	0
+	+	16	43
+	+	1	0
+	+	15	0
+	+	16	26
+	+	14	65
+	+	1	0
+	o	89	9
+
+> ~/.vim/ftplugin/latex-suite/texrc
+	"	128	0
+	.	127	27
+	+	346	0
+	+	127	27
+
+> ~/Dropbox/LocME/parts/related.tex
+	"	1	1
+	.	1	0
+	+	1	0
+
+> ~/.vimrc
+	"	191	1
+	^	210	52
+	.	210	51
+	+	239	0
+	+	240	0
+	+	182	0
+	+	116	0
+	+	210	51
+	j	188	8
+
+> ~/.vim/doc/latex-suite.txt
+	"	133	0
+
+> ~/[Buf List]
+	"	2	1
+	.	2	0
+	+	1	0
+	+	3	0
+	+	2	0
+
+> ~/__Tag_List__
+	"	5	4
+	.	6	0
+	+	7	0
+	+	32	0
+	+	7	0
+	+	6	0
+
+> ~/[File List]
+	"	33	0
+	.	3	0
+	+	39	0
+	+	39	0
+	+	39	0
+	+	39	0
+	+	39	0
+	+	39	0
+	+	3	0
+	t	5	0
+
+> /usr/share/vim/vim74/doc/help.txt
+	"	1	0
+
+> ~/mygit/SensorRecorder/.git/MERGE_MSG
+	"	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/tmp
+	"	298	0
+	n	78	12
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/testAccCrossDimCorrelation.py
+	"	23	40
+	^	11	11
+	.	1	0
+	+	22	0
+	+	23	48
+	+	6	0
+	+	23	47
+	+	15	18
+	+	17	19
+	+	23	54
+	+	14	14
+	+	13	38
+	+	14	4
+	+	13	11
+	+	14	25
+	+	1	0
+	+	11	10
+	+	1	0
+
+> ~/.vim/bundle/python-mode/doc/pymode.txt
+	"	518	31
+
+> ~/.vim/log
+	"	1	0
+
+> ~/.vim/[Buf List]
+	"	1	1
+	.	1	0
+	+	1	0
+
+> ~/.vim/__Tag_List__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/log
+	"	513	23
+
+> ~/[Vundle] Installer
+	"	8	0
+	.	1	0
+	+	8	0
+	+	1	0
+
+> /tmp/vViPelw/21
+	"	5	1
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/log
+	"	1889	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/test.py
+	"	4	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/simulation/Simulator.py
+	"	99	0
+	^	133	37
+	.	128	0
+	+	143	0
+	+	143	44
+	+	143	113
+	+	143	0
+	+	143	72
+	+	143	20
+	+	143	11
+	+	143	15
+	+	143	19
+	+	143	29
+	+	143	56
+	+	143	0
+	+	143	38
+	+	143	0
+	+	143	27
+	+	143	71
+	+	143	32
+	+	143	0
+	+	143	66
+	+	143	0
+	+	83	67
+	+	1	0
+	+	127	30
+	+	45	0
+	+	23	40
+	+	1	0
+	+	38	21
+	+	39	19
+	+	68	43
+	+	68	41
+	+	68	46
+	+	68	11
+	+	116	37
+	+	117	41
+	+	1	0
+	+	116	24
+	+	118	21
+	+	1	0
+	+	68	25
+	+	1	0
+	+	78	0
+	+	68	0
+	+	71	0
+	+	74	11
+	+	75	0
+	+	74	26
+	+	76	28
+	+	1	0
+	+	83	0
+	+	81	40
+	+	83	56
+	+	1	0
+	+	82	26
+	+	1	0
+	+	123	12
+	+	124	15
+	+	1	0
+	+	123	28
+	+	1	0
+	+	10	19
+	+	1	0
+	+	17	0
+	+	1	0
+	+	1	0
+	+	142	0
+	+	135	69
+	+	141	0
+	+	135	69
+	+	140	11
+	+	139	21
+	+	140	0
+	+	135	46
+	+	149	0
+	+	150	0
+	+	150	0
+	+	147	0
+	+	147	0
+	+	148	0
+	+	150	47
+	+	1	0
+	+	144	0
+	+	145	8
+	+	135	33
+	+	145	0
+	+	135	102
+	+	1	0
+	+	127	0
+	+	135	114
+	+	85	45
+	+	12	42
+	+	85	92
+	+	151	24
+	+	130	27
+	+	131	32
+	+	130	14
+	+	131	37
+	+	133	34
+	+	116	42
+	+	133	36
+	+	128	0
+	a	127	31
+
+> ~/mygit/SensorRecorder/analysis/scripts/simulation/[Buf List]
+	"	1	0
+	.	4	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	4	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/simulation/__Tag_List__
+	"	50	4
+	.	65	0
+	+	83	0
+	+	83	0
+	+	82	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	65	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/simulation/__doc____rope__
+	"	16	0
+	.	1	0
+	+	31	0
+	+	16	0
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/simulation/__doc__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/testMotionType.py
+	"	12	6
+	^	11	40
+	.	1	0
+	+	6	33
+	+	7	88
+	+	8	26
+	+	7	7
+	+	8	8
+	+	9	45
+	+	10	45
+	+	11	39
+	+	1	0
+	+	10	6
+	+	1	0
+
+> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__init__.py
+	"	1	0
+	^	3	43
+	.	3	42
+	+	6	0
+	+	6	0
+	+	1	0
+	+	6	0
+	+	1	0
+	+	5	10
+	+	4	11
+	+	2	50
+	+	1	0
+	+	1	0
+	+	3	42
+
+> ~/1.sh
+	"	2	20
+	^	4	2
+	.	2	19
+	+	2	29
+	+	4	0
+	+	2	19
+
+> ~/mygit/LynCrawler/examples/drawBattery.py
+	"	157	7
+	.	142	0
+	+	104	0
+	+	106	0
+	+	137	0
+	+	142	0
+
+> ~/mygit/LynCrawler/examples/drawBattery.py.LOCAL.20888.py
+	"	155	7
+
+> ~/mygit/LynCrawler/examples/drawBattery.py.BASE.20888.py
+	"	155	7
+
+> ~/mygit/LynCrawler/examples/drawBattery.py.REMOTE.20888.py
+	"	157	7
+
+> ~/.vim/bundle/vim-autoformat/plugin/autoformat.vim
+	"	62	28
+
+> /tmp/vM6vQjL/20
+	"	35	0
+
+> []\T1/cmr/m/n/10 Despite of these lim-i-ta-tions, []\T1/cmr/m/it/10 TODO
+	"	1	0
+
+> ~/Downloads/tmp/index.html
+	"	178	0
+	^	177	268
+	.	170	0
+	+	3	0
+	+	132	0
+	+	132	47
+	+	132	91
+	+	132	91
+	+	132	0
+	+	133	0
+	+	133	0
+	+	183	0
+	+	231	0
+	+	185	39
+	+	192	79
+	+	183	0
+	+	3	0
+	+	183	0
+	+	183	0
+	+	3	0
+	+	183	39
+	+	183	79
+	+	183	0
+	+	3	0
+	+	183	0
+	+	3	0
+	+	134	0
+	+	137	39
+	+	144	81
+	+	149	83
+	+	144	77
+	+	183	0
+	+	182	0
+	+	146	0
+	+	151	0
+	+	152	0
+	+	153	0
+	+	154	132
+	+	154	0
+	+	155	0
+	+	154	33
+	+	156	38
+	+	166	44
+	+	166	0
+	+	179	0
+	+	154	33
+	+	156	379
+	+	157	0
+	+	156	474
+	+	157	19
+	+	169	0
+	+	157	0
+	+	162	0
+	+	164	0
+	+	166	75
+	+	162	58
+	+	168	32
+	+	162	58
+	+	162	140
+	+	161	35
+	+	163	33
+	+	161	49
+	+	162	0
+	+	168	31
+	+	162	51
+	+	166	77
+	+	168	149
+	+	192	0
+	+	168	0
+	+	168	241
+	+	168	164
+	+	162	65
+	+	179	0
+	+	172	87
+	+	175	54
+	+	177	322
+	+	177	267
+	+	170	0
+
+> ~/Downloads/tmp/[Buf List]
+	"	1	1
+	.	2	0
+	+	2	0
+
+> ~/Downloads/tmp/__Tag_List__
+	"	3	1
+	.	4	0
+	+	4	0
 
 > ~/.vim/[Vundle] Installer
 	"	8	0
@@ -509,82 +1686,6 @@ $
 	+	1	0
 	+	1	0
 	o	39	20
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/Util.py
-	"	87	0
-	.	1	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	22
-	+	110	66
-	+	110	0
-	+	110	6
-	+	110	14
-	+	110	29
-	+	110	17
-	+	110	14
-	+	110	0
-	+	110	44
-	+	110	38
-	+	110	30
-	+	110	13
-	+	110	7
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	27
-	+	110	31
-	+	110	38
-	+	110	0
-	+	110	23
-	+	110	50
-	+	110	29
-	+	110	33
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	29
-	+	110	8
-	+	110	0
-	+	110	14
-	+	110	0
-	+	110	0
-	+	110	19
-	+	110	0
-	+	110	55
-	+	110	28
-	+	110	0
-	+	110	22
-	+	110	0
-	+	110	24
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	11
-	+	110	0
-	+	110	22
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	21
-	+	110	0
-	+	110	0
-	+	110	0
-	+	110	0
-	+	80	0
-	+	81	0
-	+	1	0
-	+	81	0
-	+	1	0
-	o	83	9
 
 > ~/Downloads/fklikeArxiv/tem/test/paper.arxiv.tex
 	"	15	0
@@ -1247,118 +2348,6 @@ $
 	+	9	32
 	o	14	13
 
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/TraceReader.py
-	"	63	52
-	^	63	51
-	.	63	50
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	45
-	+	786	51
-	+	786	64
-	+	786	20
-	+	786	12
-	+	786	21
-	+	786	0
-	+	786	16
-	+	786	90
-	+	786	33
-	+	786	94
-	+	786	0
-	+	786	20
-	+	786	73
-	+	786	15
-	+	786	0
-	+	786	0
-	+	786	45
-	+	786	0
-	+	786	0
-	+	786	33
-	+	786	22
-	+	786	32
-	+	786	22
-	+	786	0
-	+	786	11
-	+	786	0
-	+	786	34
-	+	786	0
-	+	786	0
-	+	786	37
-	+	786	0
-	+	786	0
-	+	786	25
-	+	786	0
-	+	786	61
-	+	786	18
-	+	786	0
-	+	786	0
-	+	786	95
-	+	786	66
-	+	786	68
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	26
-	+	786	0
-	+	786	0
-	+	786	43
-	+	786	13
-	+	786	47
-	+	786	58
-	+	786	48
-	+	786	0
-	+	786	13
-	+	786	61
-	+	786	18
-	+	786	23
-	+	786	62
-	+	786	87
-	+	786	67
-	+	786	32
-	+	786	14
-	+	786	46
-	+	786	33
-	+	786	27
-	+	786	87
-	+	786	27
-	+	786	57
-	+	786	23
-	+	786	42
-	+	786	0
-	+	786	14
-	+	786	0
-	+	786	0
-	+	786	107
-	+	786	0
-	+	786	0
-	+	786	0
-	+	786	13
-	+	786	0
-	+	786	23
-	+	786	0
-	+	786	0
-	+	786	8
-	+	186	0
-	+	1	0
-	+	584	62
-	+	589	18
-	+	590	12
-	+	591	11
-	+	589	75
-	+	60	58
-	+	63	50
-
-> ~/Dropbox/LocME/paper.tex
-	"	78	13
-	^	31	23
-	.	31	22
-	+	61	0
-	+	31	22
-
 > ~/Dropbox/LocME/parts/bib.bib
 	"	87	0
 	^	19	24
@@ -1378,17 +2367,6 @@ $
 	+	21	0
 	+	19	23
 	+	111	0
-
-> ~/Dropbox/LocME/parts/introduction.tex
-	"	1	29
-	^	7	30
-	.	3	0
-	+	5	0
-	+	1	0
-	+	2	0
-	+	6	0
-	+	4	16
-	+	3	0
 
 > ~/Dropbox/LocME/parts/design.tex
 	"	7	0
@@ -1416,17 +2394,6 @@ $
 	+	15	0
 	+	10	1028
 	+	10	971
-
-> /usr/share/vim/vim74/doc/help.txt
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__doc____rope__
-	"	4	0
-	.	1	0
-	+	11	0
-	+	8	0
-	+	4	0
-	+	1	0
 
 > ~/Downloads/206 Midterm Sol Winter 2015/1.c
 	"	8	14
@@ -1577,1748 +2544,3 @@ $
 
 > ~/Downloads/206 Midterm Sol Winter 2015/te
 	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotElevator.py
-	"	20	10
-	^	21	27
-	.	1	0
-	+	19	26
-	+	21	27
-	+	23	0
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/simulation/Simulator.py
-	"	139	15
-	^	139	11
-	.	137	0
-	+	140	0
-	+	140	129
-	+	140	0
-	+	140	0
-	+	140	13
-	+	140	8
-	+	140	23
-	+	140	0
-	+	140	0
-	+	140	41
-	+	140	41
-	+	140	0
-	+	140	23
-	+	140	17
-	+	140	37
-	+	140	37
-	+	140	36
-	+	140	0
-	+	140	0
-	+	140	20
-	+	140	0
-	+	140	21
-	+	140	51
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	20
-	+	140	0
-	+	140	0
-	+	140	44
-	+	140	113
-	+	140	0
-	+	140	72
-	+	140	20
-	+	140	11
-	+	140	15
-	+	140	19
-	+	140	29
-	+	140	56
-	+	140	0
-	+	140	38
-	+	140	0
-	+	140	27
-	+	140	71
-	+	140	32
-	+	140	0
-	+	140	66
-	+	140	0
-	+	82	67
-	+	1	0
-	+	125	30
-	+	44	0
-	+	22	40
-	+	1	0
-	+	37	21
-	+	38	19
-	+	67	43
-	+	67	41
-	+	67	46
-	+	67	11
-	+	114	37
-	+	115	41
-	+	1	0
-	+	114	24
-	+	116	21
-	+	1	0
-	+	67	25
-	+	1	0
-	+	77	0
-	+	67	0
-	+	70	0
-	+	73	11
-	+	74	0
-	+	73	26
-	+	75	28
-	+	1	0
-	+	82	0
-	+	80	40
-	+	82	56
-	+	1	0
-	+	81	26
-	+	1	0
-	+	121	12
-	+	122	15
-	+	1	0
-	+	121	28
-	+	1	0
-	+	10	19
-	+	1	0
-	+	16	0
-	+	1	0
-	+	1	0
-	+	139	0
-	+	133	46
-	+	138	0
-	+	133	46
-	+	137	11
-	+	136	21
-	+	137	0
-	a	125	31
-
-> ~/Dropbox/LocME/[Buf List]
-	"	1	0
-	.	6	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	6	0
-
-> ~/Dropbox/LocME/__Tag_List__
-	"	20	4
-	.	34	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	66	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	34	0
-
-> ~/Dropbox/LocME/parts/locomotion.log
-	"	16	0
-
-> ~/Dropbox/LocME/parts/locomotion.tex
-	"	63	18
-	^	70	117
-	.	70	117
-	+	51	13
-	+	51	0
-	+	108	14
-	+	114	14
-	+	106	10
-	+	70	116
-	+	78	23
-	+	83	23
-	+	102	0
-	+	101	0
-	+	91	433
-	+	52	23
-	+	58	23
-	+	64	23
-	+	70	116
-	+	75	374
-	+	111	57
-	+	117	61
-	+	119	133
-	+	119	139
-	+	107	23
-	+	113	23
-	+	107	24
-	+	113	24
-	+	111	17
-	+	119	156
-	+	117	17
-	+	119	64
-	+	98	61
-	+	19	0
-	+	21	185
-	+	21	11
-	+	21	302
-	+	21	344
-	+	21	382
-	+	21	89
-	+	46	0
-	+	21	0
-	+	21	182
-	+	21	333
-	+	21	182
-	+	21	377
-	+	21	310
-	+	21	619
-	+	21	311
-	+	21	201
-	+	21	357
-	+	21	665
-	+	71	21
-	+	21	783
-	+	22	0
-	+	23	0
-	+	25	23
-	+	31	23
-	+	37	23
-	+	27	50
-	+	33	55
-	+	39	57
-	+	41	26
-	+	35	24
-	+	29	26
-	+	44	17
-	+	45	0
-	+	43	52
-	+	25	23
-	+	31	23
-	+	37	23
-	+	25	24
-	+	31	24
-	+	37	24
-	+	31	24
-	+	25	24
-	+	37	24
-	+	25	24
-	+	31	24
-	+	37	24
-	+	23	13
-	+	45	11
-	+	25	24
-	+	31	24
-	+	37	24
-	+	21	706
-	+	119	37
-	+	21	355
-	+	103	300
-	+	103	43
-	+	103	140
-	+	103	263
-	+	123	101
-	+	123	33
-	+	123	120
-	+	20	162
-	+	21	204
-	+	98	87
-	+	123	121
-	+	105	13
-	+	121	11
-	+	107	23
-	+	113	23
-	+	70	117
-
-> ~/Dropbox/LocME/parts/evaluation.tex
-	"	11	14
-	^	16	23
-	.	2	0
-	+	31	67
-	+	20	5
-	+	20	19
-	+	20	0
-	+	25	0
-	+	20	0
-	+	20	60
-	+	25	60
-	+	11	13
-	+	30	11
-	+	12	13
-	+	13	0
-	+	15	0
-	+	17	0
-	+	20	0
-	+	15	0
-	+	13	34
-	+	15	0
-	+	18	0
-	+	23	0
-	+	22	0
-	+	27	0
-	+	15	28
-	+	20	28
-	+	25	28
-	+	17	0
-	+	14	17
-	+	19	0
-	+	24	0
-	+	25	5
-	+	15	31
-	+	20	31
-	+	25	31
-	+	28	33
-	+	20	32
-	+	25	32
-	+	13	24
-	+	18	24
-	+	23	24
-	+	25	32
-	+	26	27
-	+	21	19
-	+	17	0
-	+	16	22
-	+	2	0
-
-> ~/Dropbox/LocME/paper.log
-	"	466	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/TracePlotter.py
-	"	187	0
-	^	139	63
-	.	1	0
-	+	189	0
-	+	179	18
-	+	150	19
-	+	185	0
-	+	186	0
-	+	186	0
-	+	185	0
-	+	186	0
-	+	185	29
-	+	186	50
-	+	187	131
-	+	188	30
-	+	1	0
-	+	1	0
-	+	137	0
-	+	139	7
-	+	150	0
-	+	140	15
-	+	141	0
-	+	108	0
-	+	147	0
-	+	173	0
-	+	173	0
-	+	176	0
-	+	181	0
-	+	175	58
-	+	200	41
-	+	201	35
-	+	175	80
-	+	173	30
-	+	175	64
-	+	182	18
-	+	1	0
-	+	137	30
-	+	139	60
-	+	148	0
-	+	149	0
-	+	148	18
-	+	1	0
-	+	93	30
-	+	95	61
-	+	109	18
-	+	1	0
-	+	146	20
-	+	180	20
-	+	1	0
-	+	173	0
-	+	182	34
-	+	175	81
-	+	137	13
-	+	148	34
-	+	137	0
-	+	139	77
-	+	109	34
-	+	93	0
-	+	95	81
-	+	139	62
-	+	1	0
-
-> ~/Dropbox/LocME/paper.aux
-	"	27	0
-
-> ~/Dropbox/LocME/parts/latexSuiteTemp0.tex
-	"	33	17
-	.	34	0
-	+	34	0
-
-> ~/Dropbox/LocME/paper.bbl
-	"	11	0
-
-> ~/Dropbox/LocME/parts/overview.tex
-	"	1	23
-	^	1	23
-	.	1	22
-	+	1	150
-	+	2	0
-	+	2	48
-	+	2	22
-	+	2	0
-	+	2	44
-	+	2	0
-	+	2	46
-	+	2	44
-	+	2	18
-	+	2	18
-	+	2	20
-	+	2	24
-	+	2	86
-	+	3	0
-	+	2	0
-	+	3	45
-	+	3	57
-	+	3	0
-	+	3	24
-	+	3	24
-	+	3	57
-	+	3	24
-	+	3	24
-	+	3	32
-	+	3	41
-	+	3	57
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	26
-	+	3	22
-	+	3	24
-	+	3	24
-	+	3	28
-	+	1	150
-	+	1	0
-	+	1	364
-	+	1	160
-	+	1	379
-	+	1	380
-	+	2	0
-	+	2	0
-	+	1	380
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	50
-	+	2	27
-	+	2	23
-	+	2	0
-	+	1	367
-	+	1	193
-	+	1	541
-	+	1	84
-	+	1	0
-	+	1	357
-	+	1	182
-	+	1	411
-	+	1	0
-	+	1	410
-	+	1	374
-	+	1	437
-	+	2	13
-	+	2	11
-	+	2	24
-	+	2	24
-	+	2	24
-	+	1	280
-	+	1	482
-	+	1	43
-	+	1	583
-	+	1	547
-	+	1	0
-	+	1	358
-	+	1	475
-	+	1	219
-	+	1	514
-	+	1	57
-	+	1	774
-	+	1	599
-	+	1	726
-	+	1	0
-	+	3	0
-	+	2	0
-	+	1	22
-
-> ~/Dropbox/LocME/parts/sensorrecorder.tex
-	"	67	12
-	^	63	29
-	.	63	29
-	+	1	127
-	+	27	0
-	+	1	212
-	+	1	22
-	+	27	339
-	+	1	219
-	+	3	271
-	+	10	0
-	+	3	341
-	+	27	0
-	+	27	0
-	+	1	142
-	+	1	0
-	+	1	159
-	+	3	211
-	+	3	386
-	+	10	0
-	+	12	24
-	+	18	24
-	+	20	54
-	+	14	53
-	+	15	39
-	+	21	40
-	+	24	50
-	+	25	19
-	+	22	24
-	+	16	23
-	+	15	22
-	+	21	23
-	+	3	676
-	+	3	420
-	+	3	554
-	+	7	102
-	+	7	0
-	+	7	144
-	+	10	0
-	+	7	340
-	+	7	67
-	+	27	0
-	+	2	0
-	+	3	211
-	+	3	211
-	+	3	551
-	+	3	0
-	+	6	0
-	+	4	0
-	+	7	688
-	+	42	0
-	+	7	702
-	+	7	0
-	+	7	1250
-	+	45	38
-	+	3	139
-	+	5	350
-	+	7	56
-	+	7	890
-	+	7	992
-	+	7	0
-	+	7	992
-	+	7	723
-	+	7	1268
-	+	7	800
-	+	8	0
-	+	9	281
-	+	9	449
-	+	9	0
-	+	9	531
-	+	9	133
-	+	9	505
-	+	5	345
-	+	65	102
-	+	53	26
-	+	58	29
-	+	63	29
-
-> ~/Dropbox/LocME/parts/related.tex
-	"	1	0
-	^	1	0
-	.	1	0
-	+	12	124
-	+	13	29
-	+	13	124
-	+	13	48
-	+	13	101
-	+	15	0
-	+	13	24
-	+	13	35
-	+	14	0
-	+	8	147
-	+	7	24
-	+	8	82
-	+	13	35
-	+	13	36
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/testDeadReckonWithMovingAverage.py
-	"	19	43
-	^	15	4
-	.	15	0
-	+	15	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/testMagnitudeCorrelation.py
-	"	26	5
-	^	24	60
-	.	1	0
-	+	30	26
-	+	31	90
-	+	24	21
-	+	32	0
-	+	33	85
-	+	33	89
-	+	24	59
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotButterworthFiltered.py
-	"	24	0
-	^	23	27
-	.	1	0
-	+	52	10
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	4
-	+	52	46
-	+	52	8
-	+	52	11
-	+	52	4
-	+	52	0
-	+	52	4
-	+	52	0
-	+	52	29
-	+	52	4
-	+	52	70
-	+	52	11
-	+	52	8
-	+	52	35
-	+	52	27
-	+	52	29
-	+	52	48
-	+	52	78
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	55
-	+	52	0
-	+	52	10
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	19
-	+	52	0
-	+	52	0
-	+	52	5
-	+	52	5
-	+	52	11
-	+	52	118
-	+	52	0
-	+	52	64
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	24
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	99
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	52	0
-	+	1	0
-	+	35	0
-	+	25	0
-	+	14	0
-	+	1	0
-	+	1	0
-	+	28	0
-	+	14	0
-	+	28	0
-	+	29	0
-	+	28	0
-	+	8	0
-	+	9	0
-	+	27	21
-	+	43	0
-	+	49	0
-	+	46	0
-	+	48	0
-	+	26	0
-	+	47	0
-	+	48	55
-	+	50	69
-	+	30	62
-	+	1	0
-	+	1	0
-	+	50	26
-	+	45	26
-	+	29	26
-	+	23	27
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/[Buf List]
-	"	1	0
-	.	9	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	9	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__Tag_List__
-	"	3	0
-	.	4	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	8	0
-	+	7	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	4	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotStepDetect.py
-	"	135	1
-	^	135	69
-	.	1	0
-	+	137	0
-	+	137	137
-	+	137	0
-	+	137	199
-	+	137	189
-	+	137	191
-	+	137	180
-	+	137	0
-	+	137	198
-	+	137	217
-	+	137	0
-	+	137	219
-	+	137	208
-	+	137	0
-	+	137	135
-	+	137	0
-	+	137	0
-	+	137	140
-	+	137	165
-	+	137	163
-	+	137	154
-	+	137	0
-	+	137	136
-	+	137	0
-	+	137	138
-	+	137	165
-	+	137	158
-	+	137	149
-	+	137	0
-	+	137	158
-	+	137	160
-	+	137	135
-	+	137	149
-	+	137	0
-	+	137	141
-	+	137	166
-	+	137	164
-	+	137	155
-	+	137	0
-	+	137	211
-	+	137	185
-	+	137	208
-	+	137	189
-	+	137	0
-	+	137	192
-	+	137	193
-	+	137	0
-	+	137	55
-	+	137	0
-	+	137	37
-	+	137	45
-	+	137	45
-	+	137	49
-	+	137	0
-	+	137	0
-	+	137	79
-	+	137	51
-	+	137	37
-	+	137	42
-	+	137	0
-	+	137	33
-	+	137	47
-	+	137	33
-	+	137	39
-	+	137	26
-	+	137	0
-	+	137	39
-	+	137	0
-	+	137	0
-	+	137	17
-	+	137	0
-	+	137	15
-	+	137	0
-	+	137	3
-	+	137	0
-	+	137	0
-	+	137	62
-	+	137	0
-	+	137	34
-	+	137	0
-	+	137	30
-	+	137	31
-	+	137	0
-	+	137	60
-	+	137	0
-	+	137	63
-	+	137	0
-	+	137	0
-	+	93	0
-	+	90	0
-	+	83	0
-	+	86	0
-	+	1	0
-	+	18	60
-	+	1	0
-	+	18	55
-	+	1	0
-	+	132	15
-	+	135	68
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotCorrelation.py
-	"	74	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotEscalator.py
-	"	22	11
-	^	21	27
-	.	1	0
-	+	19	26
-	+	21	26
-	+	23	0
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotTraces.py
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/plotWifi.py
-	"	29	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/coord.py
-	"	15	0
-	^	14	12
-	.	14	12
-	+	1	0
-	+	3	29
-	+	7	0
-	+	9	0
-	+	7	25
-	+	9	24
-	+	1	0
-	+	28	0
-	+	24	17
-	+	22	23
-	+	24	20
-	+	22	26
-	+	24	26
-	+	22	26
-	+	7	34
-	+	9	14
-	+	1	0
-	+	22	19
-	+	24	18
-	+	28	38
-	+	1	0
-	+	4	0
-	+	3	0
-	+	1	0
-	+	4	0
-	+	3	0
-	+	13	19
-	+	1	0
-	+	13	23
-	+	19	20
-	+	1	0
-	+	20	100
-	+	20	106
-	+	20	12
-	+	20	110
-	+	21	107
-	+	20	123
-	+	21	123
-	+	20	53
-	+	21	53
-	+	20	67
-	+	21	67
-	+	20	83
-	+	21	83
-	+	20	99
-	+	21	99
-	+	20	116
-	+	21	125
-	+	1	0
-	+	28	0
-	+	5	35
-	+	25	14
-	+	28	0
-	+	25	52
-	+	1	0
-	+	21	137
-	+	22	137
-	+	1	0
-	+	23	0
-	+	27	10
-	+	21	3
-	+	27	55
-	+	1	0
-	+	10	0
-	+	8	0
-	+	9	4
-	+	9	0
-	+	13	0
-	+	14	12
-
-> ~/mygit/SensorRecorder/analysis/scripts/mksubtitle.py
-	"	36	21
-	^	34	47
-	.	1	0
-	+	32	43
-	+	35	43
-	+	39	39
-	+	26	0
-	+	5	0
-	+	1	0
-	+	5	0
-	+	1	0
-	+	6	0
-	+	4	23
-	+	5	3
-	+	6	0
-	+	1	0
-	+	7	35
-	+	23	21
-	+	34	62
-	+	37	35
-	+	41	58
-	+	1	0
-	+	8	30
-	+	1	0
-	+	20	43
-	+	21	31
-	+	1	0
-	+	8	25
-	+	11	77
-	+	15	88
-	+	1	0
-	+	37	35
-	+	34	35
-	+	41	0
-	+	34	37
-	+	37	38
-	+	41	0
-	+	41	0
-	+	41	36
-	+	1	0
-	+	8	29
-	+	36	45
-	+	40	41
-	+	39	38
-	+	40	0
-	+	1	0
-	+	37	0
-	+	34	0
-	+	41	0
-	+	12	21
-	+	12	21
-	+	15	39
-	+	15	0
-	+	1	0
-	+	15	66
-	+	14	25
-	+	15	19
-	+	20	0
-	+	17	23
-	+	17	63
-	+	17	54
-	+	18	0
-	+	17	0
-	+	16	18
-	+	18	0
-	+	19	34
-	+	19	20
-	+	13	0
-	+	12	18
-	+	13	16
-	+	14	12
-	+	15	12
-	+	15	51
-	+	16	0
-	+	17	58
-	+	18	0
-	+	17	57
-	+	15	51
-	+	16	0
-	+	13	55
-	+	14	0
-	+	18	12
-	+	20	0
-	+	19	57
-	+	20	0
-	+	13	89
-	+	13	0
-	+	14	13
-	+	15	15
-	+	18	16
-	+	19	45
-	+	15	75
-	+	17	69
-	+	19	69
-	+	17	59
-	+	19	43
-	+	13	61
-	+	1	0
-	+	30	30
-	+	32	38
-	+	34	46
-	+	1	0
-	+	1	0
-	b	5	7
-	o	19	59
-
-> ~/mygit/SensorRecorder/analysis/scripts/__doc____rope__
-	"	8	1
-	.	1	0
-	+	365	0
-	+	358	0
-	+	352	0
-	+	346	0
-	+	342	0
-	+	336	0
-	+	333	0
-	+	330	0
-	+	327	0
-	+	324	0
-	+	320	0
-	+	317	0
-	+	314	0
-	+	300	0
-	+	296	0
-	+	292	0
-	+	289	0
-	+	275	0
-	+	268	0
-	+	265	0
-	+	262	0
-	+	258	0
-	+	255	0
-	+	251	0
-	+	247	0
-	+	243	0
-	+	237	0
-	+	233	0
-	+	229	0
-	+	225	0
-	+	221	0
-	+	217	0
-	+	213	0
-	+	209	0
-	+	205	0
-	+	201	0
-	+	198	0
-	+	195	0
-	+	191	0
-	+	188	0
-	+	181	0
-	+	173	0
-	+	166	0
-	+	163	0
-	+	79	0
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/__init__.py
-	"	4	0
-	^	3	43
-	.	3	42
-	+	6	0
-	+	6	0
-	+	1	0
-	+	6	0
-	+	1	0
-	+	5	10
-	+	4	11
-	+	2	50
-	+	1	0
-	+	1	0
-	+	3	42
-
-> ~/mygit/SensorRecorder/analysis/scripts/tmp.py
-	"	10	0
-	^	9	11
-	.	9	10
-	+	26	52
-	+	26	85
-	+	26	0
-	+	26	6
-	+	26	0
-	+	26	0
-	+	26	53
-	+	1	0
-	+	26	21
-	+	26	47
-	+	26	63
-	+	1	0
-	+	26	0
-	+	26	0
-	+	26	14
-	+	26	5
-	+	26	14
-	+	26	0
-	+	26	0
-	+	23	33
-	+	23	5
-	+	23	8
-	+	23	36
-	+	14	0
-	+	23	7
-	+	26	26
-	+	26	21
-	+	18	0
-	+	16	34
-	+	17	34
-	+	16	41
-	+	26	0
-	+	26	0
-	+	26	13
-	+	26	36
-	+	26	0
-	+	26	0
-	+	26	34
-	+	26	35
-	+	26	32
-	+	26	35
-	+	26	32
-	+	1	0
-	+	26	0
-	+	26	9
-	+	26	18
-	+	26	9
-	+	26	0
-	+	26	8
-	+	26	0
-	+	26	0
-	+	23	0
-	+	24	28
-	+	25	36
-	+	15	0
-	+	25	40
-	+	1	5
-	+	11	0
-	+	1	76
-	+	11	0
-	+	3	11
-	+	4	24
-	+	4	3
-	+	4	0
-	+	3	0
-	+	1	49
-	+	1	0
-	+	5	5
-	+	4	15
-	+	5	27
-	+	1	38
-	+	3	0
-	+	1	38
-	+	2	0
-	+	1	25
-	+	2	0
-	+	5	7
-	+	1	0
-	+	1	0
-	+	2	0
-	+	4	12
-	+	2	0
-	+	4	0
-	+	1	0
-	+	6	5
-	+	7	17
-	+	1	0
-	+	3	0
-	+	1	0
-	+	1	0
-	+	5	34
-	+	1	0
-	+	8	10
-	+	1	0
-	+	8	21
-	+	1	0
-	+	10	0
-	+	10	0
-	+	8	0
-	+	9	10
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/SensorRecord.py
-	"	18	14
-	^	18	30
-	.	1	0
-	+	5	17
-	+	6	22
-	+	6	22
-	+	7	0
-	+	6	40
-	+	10	34
-	+	12	50
-	+	13	53
-	+	1	37
-	+	19	18
-	+	1	29
-	+	1	0
-	+	19	25
-	+	19	27
-	+	19	25
-	+	1	0
-	+	19	0
-	+	3	63
-	+	11	17
-	+	12	3
-	+	13	11
-	+	14	8
-	+	16	30
-	+	17	36
-	+	18	29
-	+	1	0
-
-> ~/.vim/bundle/python-mode/doc/pymode.txt
-	"	183	26
-
-> ~/mygit/SensorRecorder/analysis/scripts/[Buf List]
-	"	1	0
-	.	7	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	7	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/__Tag_List__
-	"	16	4
-	.	58	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	85	0
-	+	84	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	72	0
-	+	71	0
-	+	59	0
-	+	2	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	58	0
-
-> ~/mygit/SensorRecorder/analysis/traces/mcgill_long_trace/true_location/shenyan
-	"	1	0
-	^	1	2
-	.	1	0
-	+	1	0
-
-> ~/mygit/SensorRecorder/analysis/traces/trueLocationsMcgill
-	"	10	20
-	^	10	0
-	.	10	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	3	0
-	+	11	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	21
-	+	9	0
-	+	10	0
-
-> ~/.vim/bundle/[Vundle] Installer
-	"	8	0
-	.	1	0
-	+	1	0
-
-> ~/.vimrc
-	"	5	28
-	^	11	30
-	.	11	8
-	+	1	0
-	+	7	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	184	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	8	8
-	+	9	8
-	+	10	8
-	+	11	0
-	+	12	0
-	+	11	8
-
-> ~/[Buf List]
-	"	1	1
-	.	2	0
-	+	2	0
-
-> ~/__Tag_List__
-	"	3	1
-	.	26	0
-	+	26	0
-
-> ~/[File List]
-	"	1	1
-	.	3	0
-	+	3	0
-	t	5	0
-
-> ~/.vim/.vimr
-	"	1	0
-
-> ~/mygit/SensorRecorder/.git/MERGE_MSG
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/simulation/SensorRecord.py
-	"	1	0
-	^	5	0
-	.	5	0
-	+	2	0
-	+	8	0
-	+	8	0
-	+	2	28
-	+	8	0
-	+	3	57
-	+	4	25
-	+	5	0
-
-> ~/mygit/google-music-dupe-killer/kill_dupes
-	"	48	32
-	^	89	31
-	.	89	30
-	+	89	30
-
-> ~/mygit/SensorRecorder/analysis/scripts/simulation/__inti__.py
-	"	1	30
-	^	1	31
-	.	1	22
-	+	1	22
-
-> ~/mygit/SensorRecorder/analysis/scripts/traceMpl/_-
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/tm
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/t
-	"	1	0
-
-> ~/mygit/SensorRecorder/analysis/scripts/__init__.py
-	"	2	14
-	^	2	15
-	.	2	14
-	+	2	14

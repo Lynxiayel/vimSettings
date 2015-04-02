@@ -207,6 +207,7 @@ let g:pymode_lint_unmodified = 1
 let g:pymode_lint_sort = ['E', 'W', 'C']
 let g:pymode_options_max_line_length = 79
 let g:pymode_rope_show_doc_bind = '<leader>dc'
+let g:pymode_rope_goto_definition_bind = '<leader>gd'
 
 
 """"""""""""""Fcitx
