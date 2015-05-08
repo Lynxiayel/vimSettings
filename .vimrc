@@ -9,6 +9,8 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'klen/python-mode'
 Plugin 'moll/vim-node'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 
