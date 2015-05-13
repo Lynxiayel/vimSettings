@@ -187,6 +187,7 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
+nnoremap <c-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
