@@ -13,6 +13,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'cespare/vim-toml'
 
 call vundle#end()            " required
 
