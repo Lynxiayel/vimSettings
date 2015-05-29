@@ -220,6 +220,8 @@ nmap <silent> <c-l> :wincmd l<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-k> :wincmd k<CR>
 map <F6> <c-w>w
+nmap <leader>sp :sp<CR>
+nmap <leader>vp :vsp<CR>
 "
 """"""""""""""Misc settings
 set background=dark
