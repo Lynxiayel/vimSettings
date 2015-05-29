@@ -11,6 +11,8 @@ Plugin 'moll/vim-node'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'mattn/emmet-vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 
@@ -187,7 +189,7 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
-nnoremap <c-n> <Plug>IMAP_JumpForward
+nnoremap <C-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
