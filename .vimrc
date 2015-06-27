@@ -190,7 +190,7 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
-nnoremap <C-n> <Plug>IMAP_JumpForward
+nnoremap <c-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
@@ -208,7 +208,7 @@ let g:pymode_lint_sort = ['E', 'W', 'C']
 let g:pymode_options_max_line_length = 79
 let g:pymode_rope_show_doc_bind = '<leader>dc'
 let g:pymode_rope_goto_definition_bind = '<leader>gd'
-
+let g:pymode_rope_complete_on_dot = 0 "avoid conflicts with YouCompleteMe
 
 """"""""""""""Fcitx
 set ttimeoutlen=100
