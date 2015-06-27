@@ -14,7 +14,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'cespare/vim-toml'
-
 call vundle#end()            " required
 
 " When started as "evim", evim.vim will already have done these settings.
@@ -75,8 +74,8 @@ if has("autocmd")
     augroup vimrcEx
         au!
 
-        " For all text files set 'textwidth' to 78 characters.
-        autocmd FileType text setlocal textwidth=78
+        " For all text files set 'textwidth' to 79 characters.
+        autocmd FileType text setlocal textwidth=79
 
         " When editing a file, always jump to the last known cursor position.
         " Don't do it when the position is invalid or when inside an event handler
@@ -102,6 +101,8 @@ if !exists(":DiffOrig")
     command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd l | diffthis
 endif
+
+
 "Set mapleader
 let mapleader = ","
 
@@ -142,7 +143,8 @@ let g:netrw_winsize = 30
 nmap <silent> <leader>fe :Sexplore!<cr> 
 
 """"""""""""""winManager setting
-let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
+autocmd VimEnter * :WMToggle
+let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
 let g:winManagerWidth = 30
 let g:defaultExplorer = 0
 map <silent> <leader>lu :FirstExplorerWindow<cr>
@@ -153,13 +155,6 @@ map <silent> <leader>wm :WMToggle<cr>
 map <silent> <leader>wa :wa<cr> 
 map <silent> <leader>ww :w<cr> 
 
-""""""""""""""color scheme
-colorscheme lucius
-" LuciusBlackLowContrast
-" LuciusBlackHighContrast
-LuciusDarkHighContrast
-" colorscheme murphy
-" colorscheme vividchalk
 
 """"""""""""""spell check operations
 map <silent> <leader>sc :setlocal spell! spelllang=en_us<CR>
@@ -190,7 +185,7 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
-nnoremap <c-n> <Plug>IMAP_JumpForward
+" nnoremap <c-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
@@ -225,7 +220,15 @@ nmap <silent> <c-k> :wincmd k<CR>
 map <F6> <c-w>w
 nmap <leader>sp :sp<CR>
 nmap <leader>vp :vsp<CR>
-"
+
+""""""""""""""color scheme
+colorscheme lucius
+" LuciusBlackLowContrast
+" LuciusBlackHighContrast
+LuciusDarkHighContrast
+" colorscheme murphy
+" colorscheme vividchalk
+
 """"""""""""""Misc settings
 set background=dark
 let &termencoding=&encoding
