@@ -14,12 +14,10 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'cespare/vim-toml'
-call vundle#end()            " required
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-    finish
-endif
+call vundle#end()            " required
 
 " set the mouse
 if has("gui_running")
@@ -28,21 +26,12 @@ else
     set mouse=
 endif
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
 
 if has("vms")
-    set nobackup		" do not keep a backup file, use versions instead
+    set nobackup    " do not keep a backup file, use versions instead
 else
-    set backup		" keep a backup file
+    set backup  " keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -115,35 +104,23 @@ map <silent> <leader>ev :e ~/.vimrc<cr>
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc 
 
-""""""""""""""""Sessions
-function! SaveSession()
-    set sessionoptions-=curdir        "在session option中去掉curdir
-    set sessionoptions+=sesdir        "在session option中加入sesdir
-    mksession! session.vim               "创建一个会话文件
-    wviminfo! session.viminfo            "创建一个viminfo文件
-    qa           
-endfunction
-
-map <silent> <leader>ssv :call SaveSession()<cr>
-
-function! LoadSession()
-    source session.vim  "载入会话文件
-    rviminfo session.viminfo            "读入viminfo文件
-endfunction
-
-map <silent> <leader>lsv :call LoadSession()<cr>
+""""""""""""""Vim Session
+let g:session_autosave='no'
+map <leader>ssv :SaveSession
+map <leader>lsv :OpenSession
 
 """"""""""""""TagList
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
-let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Show_One_File = 1 " Only show tags for current file
+let Tlist_Exit_OnlyWindow = 1 " if taglist is the last remaining window, close
+                                "it and exit vim
 
 """""""""""""""Netrw
 let g:netrw_winsize = 30
 nmap <silent> <leader>fe :Sexplore!<cr> 
 
 """"""""""""""winManager setting
-autocmd VimEnter * :WMToggle
+" autocmd VimEnter * :WMToggle
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
 let g:winManagerWidth = 30
 let g:defaultExplorer = 0
@@ -185,7 +162,7 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
-" nnoremap <c-n> <Plug>IMAP_JumpForward
+nnoremap <c-s-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
@@ -221,6 +198,9 @@ map <F6> <c-w>w
 nmap <leader>sp :sp<CR>
 nmap <leader>vp :vsp<CR>
 
+""""""""""""""Golden View
+let g:goldenview__enable_default_mapping = 0
+
 """"""""""""""color scheme
 colorscheme lucius
 " LuciusBlackLowContrast
@@ -242,3 +222,8 @@ set softtabstop=4
 set shiftwidth=4
 set t_Co=256
 set omnifunc=syntaxcomplete#Complete
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
