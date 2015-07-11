@@ -16,6 +16,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'cespare/vim-toml'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+Plugin 'bling/vim-bufferline'
+Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 
@@ -42,6 +44,7 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
+" and maximize the window.
 if &t_Co > 2 || has("gui_running")
     syntax on
     set hlsearch
@@ -91,7 +94,6 @@ if !exists(":DiffOrig")
                 \ | wincmd l | diffthis
 endif
 
-
 "Set mapleader
 let mapleader = ","
 
@@ -102,7 +104,7 @@ map <silent> <leader>sv :source ~/.vimrc<cr>
 "Fast editing of .vimrc
 map <silent> <leader>ev :e ~/.vimrc<cr>
 "When .vimrc is edited, reload it
-autocmd! bufwritepost .vimrc source ~/.vimrc 
+autocmd! bufwritepost .vimrc source ~/.vimrc
 
 """"""""""""""Vim Session
 let g:session_autosave='no'
@@ -117,7 +119,7 @@ let Tlist_Exit_OnlyWindow = 1 " if taglist is the last remaining window, close
 
 """""""""""""""Netrw
 let g:netrw_winsize = 30
-nmap <silent> <leader>fe :Sexplore!<cr> 
+nmap <silent> <leader>fe :Sexplore!<cr>
 
 """"""""""""""winManager setting
 " autocmd VimEnter * :WMToggle
@@ -126,12 +128,11 @@ let g:winManagerWidth = 30
 let g:defaultExplorer = 0
 map <silent> <leader>lu :FirstExplorerWindow<cr>
 map <silent> <leader>lb :BottomExplorerWindow<cr>
-map <silent> <leader>wm :WMToggle<cr> 
+map <silent> <leader>wm :WMToggle<cr>
 
 """"""""""""""File saving shortcuts
-map <silent> <leader>wa :wa<cr> 
-map <silent> <leader>ww :w<cr> 
-
+map <silent> <leader>wa :wa<cr>
+map <silent> <leader>ww :w<cr>
 
 """"""""""""""spell check operations
 map <silent> <leader>sc :setlocal spell! spelllang=en_us<CR>
@@ -144,6 +145,8 @@ map <silent> <leader>n :tabnext<cr>
 """"""""""""""quit operations
 map <silent> <leader>qa :qa<cr>
 
+""""""""""""""buffer operations
+map <silent> <leader>bf :buffer 
 
 """"""""""""""stop highlighting after search
 map <silent> <leader>nh :nohl<cr>
@@ -152,7 +155,7 @@ map <silent> <leader>nh :nohl<cr>
 " execute pathogen#infect()
 " call pathogen#helptags()
 
-""""""""""""""Settings for latex-suite
+""""""""""""""latex-suite
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_GotoError=0
