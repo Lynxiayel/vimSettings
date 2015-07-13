@@ -18,6 +18,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'bling/vim-bufferline'
 Plugin 'bling/vim-airline'
+Plugin 'justincampbell/vim-eighties'
 
 call vundle#end()            " required
 
@@ -116,6 +117,9 @@ let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let Tlist_Show_One_File = 1 " Only show tags for current file
 let Tlist_Exit_OnlyWindow = 1 " if taglist is the last remaining window, close
                                 "it and exit vim
+""""""""""""""Airline
+let g:airline_theme='badwolf'
+
 
 """""""""""""""Netrw
 let g:netrw_winsize = 30
@@ -126,6 +130,7 @@ nmap <silent> <leader>fe :Sexplore!<cr>
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
 let g:winManagerWidth = 30
 let g:defaultExplorer = 0
+let g:persistentBehaviour = 0
 map <silent> <leader>lu :FirstExplorerWindow<cr>
 map <silent> <leader>lb :BottomExplorerWindow<cr>
 map <silent> <leader>wm :WMToggle<cr>
@@ -133,6 +138,10 @@ map <silent> <leader>wm :WMToggle<cr>
 """"""""""""""File saving shortcuts
 map <silent> <leader>wa :wa<cr>
 map <silent> <leader>ww :w<cr>
+
+""""""""""""""eighties
+let g:eighties_enabled = 1
+let g:eighties_bufname_additional_patterns = ['__Tag_List__','File List','Buf List']
 
 """"""""""""""spell check operations
 map <silent> <leader>sc :setlocal spell! spelllang=en_us<CR>
@@ -201,8 +210,6 @@ map <F6> <c-w>w
 nmap <leader>sp :sp<CR>
 nmap <leader>vp :vsp<CR>
 
-""""""""""""""Golden View
-let g:goldenview__enable_default_mapping = 0
 
 """"""""""""""color scheme
 colorscheme lucius
