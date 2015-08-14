@@ -19,6 +19,8 @@ Plugin 'xolox/vim-session'
 Plugin 'bling/vim-bufferline'
 Plugin 'bling/vim-airline'
 Plugin 'justincampbell/vim-eighties'
+Plugin 'scrooloose/nerdtree'
+"Plugin 'tpope/vim-fugitive' 
 
 call vundle#end()            " required
 
@@ -109,20 +111,37 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 
 """"""""""""""Vim Session
 let g:session_autosave='no'
-map <leader>ssv :SaveSession
-map <leader>lsv :OpenSession
+map <leader>ssv :SaveSession 
+map <leader>lsv :OpenSession 
 
 """"""""""""""TagList
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let Tlist_Show_One_File = 1 " Only show tags for current file
 let Tlist_Exit_OnlyWindow = 1 " if taglist is the last remaining window, close
                                 "it and exit vim
+""""""""""""""Nerdtree
+nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
+
 """"""""""""""Airline
 let g:airline_theme='badwolf'
-
+let g:airline_inactive_collapse=1
+let g:airline_section_c ='%t'
+let g:airline_mode_map = {
+      \ '__' : '-',
+      \ 'n'  : 'N',
+      \ 'i'  : 'I',
+      \ 'R'  : 'R',
+      \ 'c'  : 'C',
+      \ 'v'  : 'V',
+      \ 'V'  : 'V',
+      \ '' : 'V',
+      \ 's'  : 'S',
+      \ 'S'  : 'S',
+      \ '' : 'S',
+      \ }
 
 """""""""""""""Netrw
-let g:netrw_winsize = 30
+let g:netrw_winsize = 50
 nmap <silent> <leader>fe :Sexplore!<cr>
 
 """"""""""""""winManager setting
@@ -174,7 +193,8 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <Leader>lf :call SyncTexForward()<CR>
-nnoremap <c-s-n> <Plug>IMAP_JumpForward
+nmap <c-s-n> <Plug>IMAP_JumpForward
+imap <c-s-n> <Plug>IMAP_JumpForward
 
 """"""""""""""Disable beeping and flashing
 set noerrorbells visualbell t_vb=
@@ -220,6 +240,7 @@ LuciusDarkHighContrast
 " colorscheme vividchalk
 
 """"""""""""""Misc settings
+set wrap
 set background=dark
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
