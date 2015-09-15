@@ -206,10 +206,14 @@ noremap <leader>ex :Explore<CR>
 """"""""""""""Autoformatting
 noremap <leader>fm :Autoformat<CR><CR>
 
+
+""""""""""""""Remove trailing spaces
+noremap <leader>rt :%s/\s\+$//g<CR>
+
 """"""""""""""Pymode
 let g:pymode_lint_unmodified = 1
 let g:pymode_lint_sort = ['E', 'W', 'C']
-let g:pymode_options_max_line_length = 79
+"let g:pymode_options_max_line_length = 79
 let g:pymode_rope_show_doc_bind = '<leader>dc'
 let g:pymode_rope_goto_definition_bind = '<leader>gd'
 let g:pymode_rope_completion = 0 "avoid conflicts with YouCompleteMe
@@ -247,7 +251,7 @@ set fileencodings=utf-8,gbk,ucs-bom,cp936
 set fenc=utf-8 " default fileencoding
 set fencs=utf-8,gb18030,gbk,gb2312,cp936,ucs-bom,euc-jp
 set nu
-set tabstop=8
+set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
